@@ -1,0 +1,287 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Calculator app</string>
+    <string name="txtLoan">Loan Amount</string>
+    <string name="txtIntrest">Interest %</string>
+    <string name="txtPeriod">Period</string>
+    <string name="txtEMIAmount">EMI Amount</string>
+    <string name="btnCalculate">Calculate</string>
+    <string name="btnReset">Reset</string>
+    <string name="btnDetails">Details</string>
+    <string name="hintYear">Years</string>
+    <string name="hintMonth">Months</string>
+    <string name="txIntrestAmount">Interest Amount</string>
+    <string name="txtTotalAmount">Total Amount</string>
+    <string name="txtMonth">MONTH</string>
+    <string name="txtPrincipal">PRINCIPAL</string>
+    <string name="txtIntrestAmountHeader">INTEREST</string>
+    <string name="txtBalance">BALANCE</string>
+    <string name="txtGraphName">Break-Up Of Total Payment</string>
+    <string name="btnShare">Share</string>
+    <string name="generate_pdf">Generate pdf</string>
+    <string name="age_calculator">Age Calculator</string>
+    <string name="whatis">What is your date of birth?</string>
+    <string name="calculate">Calculate</string>
+    <string name="age_desc">Here is your age simplified and converted to different formats!</string>
+
+
+    <string name="zero">00</string>
+    <string name="years">Years</string>
+    <string name="months">Months</string>
+    <string name="days">Days</string>
+    <string name="your_age">Your Age</string>
+    <string name="next_birthday">Next Birthday</string>
+    <string name="you_have_lived_for">You Have Lived For</string>
+    <string name="total_years">Total Years     : </string>
+    <string name="total_months">Total Months   : </string>
+    <string name="total_weeks">Total Weeks     :  </string>
+    <string name="total_days">Total Days       : </string>
+    <string name="total_hours">Total Hours     : </string>
+    <string name="total_minutes">Total Minutes : </string>
+    <string name="total_seconds">Total Seconds : </string>
+    <string name="clear">Clear</string>
+    <string name="bmi_calculator">BMI Calculator</string>
+    <string name="please_fill_your_information_below">Please fill your information below :</string>
+    <string name="weight_kg">Weight(kg)</string>
+    <string name="height_cm">Height(cm)</string>
+    <string name="calculate_bmi">CALCULATE BMI</string>
+    <string name="your_bmi">Your BMI =</string>
+    <string name="_25_5">25.5</string>
+    <string name="you_have_a_normal_weight">You have a Normal Weight!</string>
+    <string name="here_are_some_advices_to_help_you_keep_your_weight">Here are some advices To help you keep your weight</string>
+    <string name="choose_the_right_foods_and_cook_by_yourself">Choose the right foods and Cook by yourself.</string>
+    <string name="stay_active">Stay active.</string>
+    <string name="focus_on_relaxation_and_sleep">Focus on relaxation and sleep.</string>
+    <string name="plus">+</string>
+    <string name="_3">3</string>
+    <string name="_2">2</string>
+    <string name="_1">1</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="minus">-</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="multiple">x</string>
+    <string name="dot">.</string>
+    <string name="_0">0</string>
+    <string name="_0_perce">0%</string>
+    <string name="c">AC</string>
+
+    <string name="devide">÷</string>
+    <string name="basic_calculator">Basic calculator</string>
+    <string name="discount_calculator">Discount calculator</string>
+    <string name="x">x</string>
+    <string name="equal">=</string>
+    <string name="original_price">Original price</string>
+    <string name="you_save_0">You save : </string>
+    <string name="discount_off">Discount (% off)</string>
+    <string name="final_price">Final price</string>
+    <string name="percentage_calculator">Percentage calculator</string>
+    <string name="enter_percentage">Enter Percentage</string>
+    <string name="enter_number">Enter Number</string>
+    <string name="length_convert">Length convert</string>
+    <string name="backspace">⌫</string>
+    <string name="desc_toggle_currencies">toggle currencies</string>
+    <string name="fee_summary">Depending on your credit card agreement, your bank may charge a fee on all foreign exchange transactions. Here you can enter that fee. It will be added on top of the calculation, so you know how much you <i>really</i> pay.</string>
+    <string name="error">Error: %s</string>
+    <string name="error_no_data">Couldn\'t update the exchange rates. No connection.</string>
+    <string name="error_api_error">There was an API error. Please try again later.</string>
+
+    <string name="menu_settings">Settings</string>
+    <string name="menu_refresh">Refresh rates</string>
+    <string name="menu_timeline">Exchange rate chart</string>
+    <string name="title_preferences" translatable="false">@string/menu_settings</string>
+    <string name="decimal_separator">.</string>
+    <string name="thousands_separator">\u2009</string>
+    <string name="copied_to_clipboard">Copied &lt;b>%s&lt;/b> to clipboard</string>
+    <string name="last_updated">Exchange rate from %s</string>
+    <string name="today">today</string>
+    <string name="yesterday">yesterday</string>
+    <string name="exit_confirmation">Are you sure want to exit?</string>
+    <string name="AD_MOB_APPLICATION_ID">ca-app-pub-3940256099942544~3347511713</string>
+    <string-array name="length">
+        <item>Nanometer</item>
+        <item>Millimeter</item>
+        <item>Centimeter</item>
+        <item>Meter</item>
+        <item>Kilometer</item>
+        <item>Inches</item>
+        <item>Foot</item>
+        <item>Yards</item>
+        <item>Mile</item>
+    </string-array>
+    <string name="changelog" translatable="false"><b>1.7.0</b>
+        \n⸻
+        \n<li><b>Enjoy some big new feature in this release!</b>
+        \nMost notably, this app now includes historic rates. Check out the chart for the past year, to see how the currencies have developed.</li>
+        \n<li>There\'s also an additional exchange rate provider: You can now choose <b>fer.ee</b> in the settings. A relatively new service, that behaves basically like frankfurter.app and is just one more choice for you.</li>
+        \n<li>As always, this release includes updated libraries, small improvements and all the stuff that makes it even better.</li>
+        \n
+        \n<b>1.6.0</b>
+        \n⸻
+        \n<li>Thanks to the support of awesome community members, this app is now not only localized in English and German, but also Spanish, French, Italian and Norwegian (Bokmål). Thanks so much for your help! 🙏🙏🙏</li>
+        \n<li>Small under-the-hood updates to make the app even more reliable.</li>
+        \n
+        \n<b>1.5.1</b>
+        \n⸻
+        \n<li>Fixes a bug where the rates wouldn\'t update, when exchangerate.host is used.</li>
+        \n<li>Library updates to improve stability and performance.</li>
+        \n
+        \n<b>1.5.0</b>
+        \n⸻
+        \n<li>Select between two API providers: <b>exchangerate.host</b> and <b>frankfurter.app</b></li>
+        \n<li>You can now support the developer by donating with PayPal. Find the link in the settings. (F-Droid version only.)</li>
+        \n<li>More UI improvements</li>
+        \n
+        \n<b>1.4.1</b>
+        \n⸻
+        \n<li>UI improvements</li>
+        \n
+        \n<b>1.4.0</b>
+        \n⸻
+        \n<li>It is now possible to manually refresh the rates. Check it out in the overflow menu.</li>
+        \n<li>Performance improvements</li>
+        \n
+        \n<b>1.3.0</b>
+        \n⸻
+        \n<li><b>So many more currencies! Over 160 in total, now!!</b> That\'s because Currencies switched to a different API. The old one (exchangeratesapi.io) changed to a subscription model without any prior warning. NOT GOOD! Our new provider will be exchangerate.host.</li>
+        \n<li>That also means, that the last couple of days, the exchange rates couldn\'t be refreshed. That\'s fixed now, of course.</li>
+        \n<li>Also, the refresh process itself got improved, so at least next time something like that happens, you\'ll get a notice.</li>
+        \n<li>Small UI improvements</li>
+        \n
+        \n<b>1.2.0</b>
+        \n⸻
+        \n<li><b>17 new currencies!</b> That\'s now 50 in total. 🥳 Too many to name them all. However, a lot of popular vacation destinations in the middle east and the caribbean are now included: UAE, Qatar, Barbados, Bahamas, Cuba, …</li>
+        \n<li>To stay on top of all those new choices, a <b>search</b> is now available in the currency picker.</li>
+        \n<li>The picker now also shows a currency\'s <b>full name</b>, not only its code. An awesome addition, in combination with the search. Try it out!</li>
+        \n
+        \n<b>1.1.1</b>
+        \n⸻
+        \n<li>Minor improvements (typo \'n stuff)</li>
+        \n
+        \n<b>1.1.0</b>
+        \n⸻
+        \n<li>Depending on your credit card agreement, your bank may charge a fee on all foreign exchange transactions.\nYou can now include that fee in the calculations, so you know how much you really pay. 🙂</li>
+        \n
+        \n<b>1.0.1</b>
+        \n⸻
+        \n<li>Fix possible crash on Android 11</li>
+        \n
+        \n<b>1.0.0</b>
+        \n⸻
+        \n<li>Added German translation 🇩🇪</li>
+        \n<li>Minor improvement: App size decreased by 50%!</li>
+        \n<li>App seems pretty stable: Public 1.0 release! 🥳🥳🥳</li>
+        \n
+        \n<b>0.2.2</b>
+        \n⸻
+        \n<li>Minor improvements</li>
+        \n
+        \n<b>0.2.1</b>
+        \n⸻
+        \n<li>Better error handling</li>
+        \n<li>Minor improvements</li>
+        \n
+        \n<b>0.2.0</b>
+        \n⸻
+        \n<li>Added a copy function: Long click on the value you want to copy</li>
+        \n
+        \n<b>0.1.0</b>
+        \n⸻
+        \n<li>More fail-proof updating of the currency rates</li>
+        \n<li>Added a disclaimer</li>
+        \n<li>Added this changelog</li>
+        \n
+        \n<b>0.0.1</b>
+        \n⸻
+        \n<li>Initial pre-release</li>
+    </string>
+
+
+    <string name="rate_average">avg</string>
+    <string name="rate_min">min</string>
+    <string name="rate_max">max</string>
+
+    <string name="year">year</string>
+    <string name="month">month</string>
+    <string name="week">week</string>
+    <string name="title_changelog" translatable="false">Changelog</string>
+    <string name="category_settings">General Settings</string>
+    <string name="theme_key" translatable="false">KEY_THEME</string>
+    <string name="theme_title">Design</string>
+    <string name="theme_option_light">Light</string>
+    <string name="theme_option_dark">Dark</string>
+    <string name="theme_option_default">System default</string>
+    <string name="fee_key" translatable="false">KEY_FEE</string>
+    <string name="fee_title">Foreign transaction fee</string>
+
+    <!-- api -->
+    <string name="category_api">Exchange rates</string>
+    <string name="api_key" translatable="false">KEY_API</string>
+    <string name="api_title">Data provider</string>
+    <string name="key_apiProvider" translatable="false">KEY_DATA_SOURCE</string>
+    <string name="api_about_title">About data provider</string>
+    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> sources the currency rates from various financial data providers and banks, including the European Central Bank. All exchange rate data are delivered in midpoint data. Midpoint rates are determined by calculating the average median rate of Bid and Ask.\n<b>About 160 currencies are included.</b></string>
+    <string name="api_about_frankfurterApi"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> tracks reference exchange (forex) rates published by the European Central Bank.\n<b>About 30 currencies are included.</b></string>
+    <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> is a relatively new service, that (just like Frankfurter.app) does track reference exchange (forex) rates that are published by the European Central Bank.\n<b>About 30 currencies are included.</b></string>
+    <string name="key_refreshPeriod" translatable="false">KEY_DATA_UPDATE</string>
+    <string name="api_refreshPeriod_title">Refresh Period</string>
+    <string name="api_refreshPeriod_exchangerateHost">Exchange rates are updated around midnight UTC every working day.</string>
+    <string name="api_refreshPeriod_frankfurterApi">The data is getting updated around 16:00 CET every working day.</string>
+    <string name="api_refreshPeriod_ferEe">Rates are updated every working day.</string>
+
+    <!-- about -->
+    <string name="category_about">About this app</string>
+    <string name="disclaimer_title">Disclaimer</string>
+    <string name="disclaimer_summary">Although the app is very thoroughly written and tested, <b>there is no guarantee that the data it shows is correct</b>. The exchange rates are provided by a third party and this app can\'t make no promise whatsoever that the data is true and up-to-date.\nAdditionally, the rates provided – still if correct – may vary from the ones used by your bank.\nLastly: Mistakes happen. Never blindly trust anyone! That being said, rest assured I wouldn\'t have released this app if I\'ve had any doubt that it works as intended.</string>
+    <string name="donate_key" translatable="false">KEY_DONATE</string>
+    <string name="donate_title">Support the developer</string>
+    <string name="donate_summary">Donate via PayPal</string>
+    <string name="about_key" translatable="false">KEY_ABOUT</string>
+    <string name="aboutVersion">Version %1$s</string>
+    <string name="about_summary" translatable="false" tools:ignore="PluralsCandidate">© %1$d Maximilian Salomon</string>
+
+    <string name="activity_timeline_title">&lt;b>%1$s&lt;/b> to &lt;b>%2$s&lt;/b></string>
+    <string name="result">Result :</string>
+    <string name="advance_calculator">Advance calculator</string>
+    <string name="emi_calculator">EMI Calculator</string>
+
+    <string-array name="api_about_summary">
+        <item>@string/api_about_exchangerateHost</item>
+        <item>@string/api_about_frankfurterApi</item>
+        <item>@string/api_about_ferEe</item>
+    </string-array>
+
+    <string-array name="api_refreshPeriod_summary">
+        <item>@string/api_refreshPeriod_exchangerateHost</item>
+        <item>@string/api_refreshPeriod_frankfurterApi</item>
+        <item>@string/api_refreshPeriod_ferEe</item>
+
+    </string-array>
+
+    <string-array name="theme_names" translatable="false">
+        <item>@string/theme_option_light</item>
+        <item>@string/theme_option_dark</item>
+        <item>@string/theme_option_default</item>
+    </string-array>
+
+    <string-array name="theme_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- api -->
+    <string-array name="api_names" translatable="false">
+        <item>Exchangerate.host</item>
+        <item>Frankfurter.app</item>
+        <item>Fer.ee</item>
+    </string-array>
+
+    <string-array name="api_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path
+        name="external_files"
+        path="." />
+    <root-path
+        path="/"
+        name="root_files" />
+    <catch-patch
+        name="catch_files"
+        path="/" />
+    <external-cache-path
+        name="external_cache_files"
+        path="." />
+</paths>

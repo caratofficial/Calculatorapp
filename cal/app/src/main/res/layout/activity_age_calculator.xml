@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AgeCalculatorActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/theme_color"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/txtAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:text="@string/age_calculator"
+            android:textColor="@color/text_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btnSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="4dp"
+            android:src="@drawable/baseline_menu_white_24" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/whatis"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:alpha="0.8"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnClear"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btntheme"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:text="@string/clear"
+                    android:textColor="@color/colorWhite" />
+
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btntheme"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="@string/calculate"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAgeResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:fontFamily="@font/app_font"
+                    android:gravity="start"
+                    android:text="Age Results"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/app_font"
+                    android:gravity="start"
+                    android:text="@string/age_desc"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/ageCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardBackgroundColor="@color/cardBackgroundColor"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="0dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/yourAge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="@string/your_age"
+                                android:textColor="@color/colorWhite"
+                                android:fontFamily="@font/app_font"
+                                android:textSize="20sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/yourAge"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/ageYears"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginBottom="15dp"
+                                    android:text="@string/zero"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="28sp" />
+
+                                <TextView
+                                    android:id="@+id/textYears"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:layout_toEndOf="@+id/ageYears"
+                                    android:fontFamily="@font/app_font"
+                                    android:text="@string/years"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/ageMonths"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:layout_toEndOf="@+id/textYears"
+                                    android:text="@string/zero"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="28sp" />
+
+                                <TextView
+                                    android:id="@+id/textMonths"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:fontFamily="@font/app_font"
+                                    android:layout_toEndOf="@+id/ageMonths"
+                                    android:text="@string/months"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/ageDays"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:layout_toEndOf="@+id/textMonths"
+                                    android:text="@string/zero"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="28sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/app_font"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="20dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:layout_toEndOf="@+id/ageDays"
+                                    android:text="@string/days"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="20sp" />
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/nextCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_below="@+id/ageCard"
+                        android:layout_margin="10dp"
+                        app:cardBackgroundColor="@color/cardBackgroundColor"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="0dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/nextBirthDayText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="@string/next_birthday"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/nextBirthDayText"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/nextBDMonth"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginBottom="15dp"
+                                    android:text="@string/zero"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="28sp" />
+
+                                <TextView
+                                    android:id="@+id/nextMonthText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:layout_toEndOf="@+id/nextBDMonth"
+                                    android:text="@string/months"
+                                    android:fontFamily="@font/app_font"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:id="@+id/nextDay"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:layout_toEndOf="@+id/nextMonthText"
+                                    android:text="@string/zero"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="28sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="20dp"
+                                    android:fontFamily="@font/app_font"
+                                    android:layout_marginBottom="20dp"
+                                    android:layout_toEndOf="@+id/nextDay"
+                                    android:text="@string/days"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="20sp" />
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/nextCard"
+                        android:layout_margin="10dp"
+                        app:cardBackgroundColor="@color/cardBackgroundColor"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="0dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/detailAge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:fontFamily="@font/app_font"
+                                android:text="@string/you_have_lived_for"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="20sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/detailAge"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="1dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/left"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="end"
+                                    android:padding="20dp">
+
+                                    <TextView
+                                        android:id="@+id/text1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="10dp"
+                                        android:gravity="end"
+                                        android:fontFamily="@font/app_font"
+                                        android:text="@string/total_years"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="20sp" />
+
+                                    <TextView
+                                        android:id="@+id/text2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/app_font"
+                                        android:layout_below="@+id/text1"
+                                        android:layout_marginBottom="10dp"
+                                        android:text="@string/total_months"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="20sp" />
+
+                                    <TextView
+                                        android:id="@+id/text3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/text2"
+                                        android:layout_marginBottom="10dp"
+                                        android:text="@string/total_weeks"
+                                        android:textColor="@color/colorWhite"
+                                        android:fontFamily="@font/app_font"
+                                        android:textSize="20sp" />
+
+                                    <TextView
+                                        android:id="@+id/text4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/text3"
+                                        android:layout_marginBottom="10dp"
+                                        android:text="@string/total_days"
+                                        android:fontFamily="@font/app_font"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="20sp" />
+
+                                    <TextView
+                                        android:id="@+id/text5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/text4"
+                                        android:fontFamily="@font/app_font"
+                                        android:layout_marginBottom="10dp"
+                                        android:text="@string/total_hours"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="20sp" />
+
+                                    <TextView
+                                        android:id="@+id/text6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/text5"
+                                        android:layout_marginBottom="10dp"
+                                        android:text="@string/total_minutes"
+                                        android:fontFamily="@font/app_font"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="20sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/text6"
+                                        android:layout_marginBottom="10dp"
+                                        android:text="@string/total_seconds"
+                                        android:fontFamily="@font/app_font"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="20sp" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toEndOf="@+id/left"
+                                    android:gravity="start"
+                                    android:padding="20dp">
+
+                                    <TextView
+                                        android:id="@+id/totalYear"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="10dp"
+                                        android:text="@string/zero"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="20sp" />
+
+                                    <TextView
+                                        android:id="@+id/totalMonth"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/totalYear"
+                                        android:layout_marginBottom="10dp"
+                                        android:text="@string/zero"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="20sp" />
+
+                                    <TextView
+                                        android:id="@+id/totalWeek"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/totalMonth"
+                                        android:layout_marginBottom="10dp"
+                                        android:text="@string/zero"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="20sp" />
+
+                                    <TextView
+                                        android:id="@+id/totalDay"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/totalWeek"
+                                        android:layout_marginBottom="10dp"
+                                        android:text="@string/zero"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="20sp" />
+
+                                    <TextView
+                                        android:id="@+id/totalHour"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/totalDay"
+                                        android:layout_marginBottom="10dp"
+                                        android:text="@string/zero"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="20sp" />
+
+                                    <TextView
+                                        android:id="@+id/totalMinute"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/totalHour"
+                                        android:layout_marginBottom="10dp"
+                                        android:text="@string/zero"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="20sp" />
+
+                                    <TextView
+                                        android:id="@+id/totalSecond"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/totalMinute"
+                                        android:layout_marginBottom="10dp"
+                                        android:text="@string/zero"
+                                        android:textColor="@color/colorWhite"
+                                        android:textSize="20sp" />
+
+                                </RelativeLayout>
+
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/llAdView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/llAdViewFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

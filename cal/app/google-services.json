@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "571580884082",
+    "project_id": "calculatorapp-cd384",
+    "storage_bucket": "calculatorapp-cd384.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:571580884082:android:5c6b6c6633b8bc9b858eeb",
+        "android_client_info": {
+          "package_name": "com.calculatorapp.emi.calculator1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "571580884082-1t5neg91le2o3abpu1a46ufgl6eaem7r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCc1Bs1hADoM3eI_UdvPs-dVZTRF1xhios"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "571580884082-1t5neg91le2o3abpu1a46ufgl6eaem7r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context="com.calculatorapp.emi.calculator.activity.SettingActivity">
+
+    <RelativeLayout
+        android:id="@+id/rltTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_color"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/btnBackSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="4dp"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/btnBackSetting"
+            android:text="Settings"
+            android:textColor="@color/text_color" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rltTop"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/rltContactUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/imgContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="4dp"
+                android:src="@drawable/ic_contact_us" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imgContact"
+                android:text="Contact Us" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/imgContact"
+                android:layout_marginTop="4dp"
+                android:background="@color/edittext_border" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rltRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/imgRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="4dp"
+                android:src="@drawable/ic_rate_app" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imgRate"
+                android:text="Rate This App" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/imgRate"
+                android:layout_marginTop="4dp"
+                android:background="@color/edittext_border" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rltShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/imgShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="4dp"
+                android:src="@drawable/ic_share_app" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imgShare"
+                android:text="Share App" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/imgShare"
+                android:layout_marginTop="4dp"
+                android:background="@color/edittext_border" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rltMoreApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp">
+
+            <ImageView
+                android:id="@+id/imgMoreApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="4dp"
+                android:src="@drawable/ic_more_app" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imgMoreApp"
+                android:text="More App" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/imgMoreApp"
+                android:background="@color/edittext_border" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

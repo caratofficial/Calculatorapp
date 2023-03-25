@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="txtTextViewSize">14sp</dimen>
+    <dimen name="txtHeaderSize">12sp</dimen>
+
+    <dimen name="five_dp">5dp</dimen>
+    <dimen name="ten_dp">10dp</dimen>
+    <dimen name="fifteen_dp">15dp</dimen>
+    <dimen name="textKeypad">26sp</dimen>
+    <dimen name="margin2x">16dp</dimen>
+    <dimen name="margin1x">8dp</dimen>
+    <dimen name="margin3x">24dp</dimen>
+    <dimen name="elevation1x">2dp</dimen>
+
+</resources>

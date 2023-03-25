@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.calculatorapp.emi.calculator.fragment.ChartFragment">
+
+
+    <LinearLayout
+        android:id="@+id/llDetailsChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/linear_top"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtGraphName"
+                android:textColor="@color/text_color"
+                android:textStyle="bold"
+                android:padding="2dp"/>
+
+        </LinearLayout>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/piechart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/txtPercentagePrincipal"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="95%"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:background="@drawable/circle"/>
+
+            <TextView
+                android:id="@+id/txtChartPKey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtPrincipal"
+                android:layout_toRightOf="@+id/txtPercentagePrincipal"
+                android:layout_marginLeft="8dp"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/txtTextViewSize"/>
+
+            <TextView
+                android:id="@+id/txtPrincipalValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtPrincipal"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="8dp"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/txtPercentageIntrest"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/circle_marron"
+                android:gravity="center"
+                android:text="5%"
+                android:textColor="@android:color/white"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtIntrestAmountHeader"
+                android:layout_toRightOf="@+id/txtPercentageIntrest"
+                android:layout_marginLeft="8dp"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/txtTextViewSize"/>
+
+            <TextView
+                android:id="@+id/txtIntrestValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtPrincipal"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="8dp"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llDetailsChart"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/button"
+        android:text="@string/btnShare"
+        android:textColor="@color/text_color"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

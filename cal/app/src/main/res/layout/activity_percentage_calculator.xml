@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.PercentageCalculatorActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/theme_color"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/txtAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="8dp"
+            android:text="@string/percentage_calculator"
+            android:textColor="@color/text_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btnSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="4dp"
+            android:src="@drawable/baseline_menu_white_24" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="@dimen/fifteen_dp">
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_percentage"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"/>
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtPercentage"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/_0_perce"
+                android:inputType="numberDecimal"
+
+                android:textAlignment="center" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/fifteen_dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_number"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtNumber"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:hint="@string/_0"
+                android:inputType="numberDecimal"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/result"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="40sp" />
+
+            <HorizontalScrollView
+                android:id="@+id/scrollEdt2"
+                android:layout_marginEnd="@dimen/fifteen_dp"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtResult"
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/theme_color"
+                android:text="@string/_0"
+                android:textAlignment="textEnd"
+                android:textSize="40sp" />
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnCalc"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@color/theme_color"
+            android:paddingHorizontal="@dimen/fifteen_dp"
+            android:text="@string/calculate"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/llAdView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/llAdViewFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>

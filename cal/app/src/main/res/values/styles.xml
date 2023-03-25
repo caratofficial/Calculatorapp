@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/font_application</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="TextCalculate" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="AppTheme.TextAppearance.Keypad" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">@dimen/textKeypad</item>
+    </style>
+    <style name="AppTheme.Button.OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:stateListAnimator">@animator/btn_elevation</item>
+        <item name="android:textColor">@color/btn_text_color</item>
+        <item name="backgroundTint">@color/btn_background_tint</item>
+        <item name="rippleColor">@color/btn_ripple_color</item>
+        <item name="strokeColor">@color/btn_stroke_color</item>
+    </style>
+
+    <style name="AppThemeSplash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:statusBarColor">@color/colorWhite</item>
+        <item name="android:navigationBarColor">@color/colorWhite</item>
+    </style>
+
+
+</resources>

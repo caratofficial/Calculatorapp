@@ -1,0 +1,304 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.calculatorapp.emi.calculator.fragment.MoreDetailsFragment">
+
+    <LinearLayout
+        android:id="@+id/llOutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/uppertextview"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:text="@string/txtLoan" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="4dp"
+                android:text="10000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/middletextview"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:text="@string/txtIntrest" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="4dp"
+                android:text="10%" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/middletextview"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:text="@string/txtPeriod" />
+
+            <TextView
+                android:id="@+id/txtDetailsPeriod"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="4dp"
+                android:text="12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/middletextview"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:text="@string/txtEMIAmount" />
+
+            <TextView
+                android:id="@+id/txtDetailsAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="4dp"
+                android:text="10000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/middletextview"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:text="@string/txIntrestAmount" />
+
+            <TextView
+                android:id="@+id/txtDetailsIntrestAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="4dp"
+                android:text="1200" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/bottomtextview"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:text="@string/txtTotalAmount" />
+
+            <TextView
+                android:id="@+id/txtDetailsTotalAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:padding="4dp"
+                android:text="15000" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llGeneratePdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ten_dp"
+        android:layout_marginTop="@dimen/ten_dp"
+        android:layout_marginRight="@dimen/ten_dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/generate_pdf"
+            android:textColor="@color/colorBlack" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgPDF"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_pdf_white"
+            android:tint="@color/theme_color" />
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/mainScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/llGeneratePdf"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/linear_top"
+                android:nestedScrollingEnabled="true"
+                android:orientation="horizontal"
+                android:padding="4dp"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/txtMonth"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/txtHeaderSize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/txtPrincipal"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/txtHeaderSize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/txtIntrestAmountHeader"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/txtHeaderSize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/txtBalance"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/txtHeaderSize"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+<!--            <androidx.core.widget.NestedScrollView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:fillViewport="true">-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/listOfIntrestAmountMonthly"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:nestedScrollingEnabled="false"
+                    tools:itemCount="50"
+                    tools:listitem="@layout/row_of_intrest_amount" />
+
+<!--            </androidx.core.widget.NestedScrollView>-->
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'org.jetbrains.kotlin.android'
+
+android {
+    compileSdkVersion 32
+    defaultConfig {
+        applicationId "com.calculatorapp.emi.calculator1"
+        minSdkVersion 21
+        targetSdkVersion 32
+        versionCode 1
+        versionName "1.4"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug{
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+dependencies {
+    /*implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.github.PhilJay:MPAndroidChart:v2.2.4'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'com.karumi:dexter:6.2.1'
+    implementation 'io.apisense:rhino-android:1.1.1'
+    implementation "androidx.core:core-ktx:+"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'org.mariuszgromada.math:MathParser.org-mXparser:4.4.2'
+    implementation 'com.robinhood.spark:spark:1.2.0'
+    implementation "com.github.kittinunf.fuel:fuel:2.3.1"
+    implementation "com.github.kittinunf.fuel:fuel-android:2.3.1"
+    implementation "com.github.kittinunf.fuel:fuel-moshi:2.3.1"
+    implementation "com.github.kittinunf.fuel:fuel-coroutines:2.3.1"
+    implementation "com.squareup.moshi:moshi-kotlin:1.12.0"
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:1.12.0"
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
+    implementation 'androidx.preference:preference-ktx:1.1.1'
+    implementation 'com.facebook.android:audience-network-sdk:6.2.1'
+    implementation 'com.google.firebase:firebase-messaging:20.1.0'
+    implementation 'com.google.firebase:firebase-ads:20.4.0'
+    implementation 'com.google.firebase:firebase-analytics:17.2.2'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.work:work-runtime-ktx:2.7.1'*/
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+//    implementation 'com.google.firebase:firebase-common-ktx:20.1.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.github.PhilJay:MPAndroidChart:v2.2.4'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'com.karumi:dexter:6.2.1'
+    implementation 'io.apisense:rhino-android:1.1.1'
+    implementation "androidx.core:core-ktx:1.8.0"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'org.mariuszgromada.math:MathParser.org-mXparser:4.4.2'
+    implementation 'com.robinhood.spark:spark:1.2.0'
+    implementation "com.github.kittinunf.fuel:fuel:2.3.1"
+    implementation "com.github.kittinunf.fuel:fuel-android:2.3.1"
+    implementation "com.github.kittinunf.fuel:fuel-moshi:2.3.1"
+    implementation "com.github.kittinunf.fuel:fuel-coroutines:2.3.1"
+    implementation "com.squareup.moshi:moshi-kotlin:1.12.0"
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:1.12.0"
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
+    implementation 'androidx.preference:preference-ktx:1.1.1'
+    implementation 'com.facebook.android:audience-network-sdk:6.2.1'
+//    implementation 'com.google.firebase:firebase-ads:20.4.0'
+//    implementation 'com.google.firebase:firebase-analytics:21.1.1'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.work:work-runtime-ktx:2.7.1'
+    implementation 'com.google.android.gms:play-services-ads:21.2.0'
+    androidTestImplementation 'androidx.test:runner:1.4.0'
+    implementation 'com.google.firebase:firebase-messaging:23.0.8'
+
+}
+repositories {
+    mavenCentral()
+}
